@@ -445,9 +445,87 @@ button:focus, button:active, button:hover ,.btn:active, .btn.active{
 .footer .social a>i:hover{
     color: var(--primary-color2);
 }
+.meet-info h5::after{
+    content: "";
+    height: 4px;
+    width: 8vw;
+    background: rgb(153, 2, 2);
+    display: inline-block;
+    margin-left: 1%;
+    transform: translateY(-10px);
+}
+.meet-info h5::before{
+    content: "";
+    height: 4px;
+    width: 8vw;
+    background: rgb(153, 2, 2);
+    display: inline-block;
+    margin-right: 1%;
+    transform: translateY(-10px);
+}
+
+.form-body{
+    box-shadow: var(--box-shadow);
+     width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 18px;
+}
 
 
-
+form .form-panel input{
+    background-color: #e7e2e2;
+    height: 50px;
+    font-weight: bolder;
+    color: #7a7a7a;
+    outline: none;
+    border: none;
+}
+form .form-panel textarea{
+    background-color:  #e7e2e2;
+    font-weight: bolder;
+    color: #7a7a7a;
+}
+form .form-panel input:focus{
+    background-color: #e7e2e2;
+    height: 50px;
+    font-weight: bolder;
+    color:rgb(65, 64, 64);
+    outline: none;
+    border: none;
+    border-color: transparent !important;
+}
+form .form-panel textarea:focus{
+    background-color:  #e7e2e2;
+    font-weight: bolder;
+    color:rgb(65, 64, 64);
+    outline: none;
+    border: none;
+    border-color: transparent !important;
+}
+textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+.form-submit{
+    width: 20%;
+    font-weight: bolder;
+}
+.form-title-text{
+    font: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+.source-button{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.pill{
+    margin-bottom: 8px;
+}
 
 /*   Responsive Code */
 
@@ -502,6 +580,9 @@ button:focus, button:active, button:hover ,.btn:active, .btn.active{
     }
     .fa-heart{
         color: var(--gradient-color);
+    }
+    .form-img{
+        display: none;
     }
 
 }
@@ -575,6 +656,10 @@ button:focus, button:active, button:hover ,.btn:active, .btn.active{
         margin-bottom: 15px;
         margin-left: 28px;
     }
+    .form-img{
+        display: none;
+    }
+
 }
 @media only screen and (max-width: 425px){
     .web-img{
@@ -584,6 +669,10 @@ button:focus, button:active, button:hover ,.btn:active, .btn.active{
     .web-des{
         margin-left: 28px;
     }
+    .form-img{
+        display: none;
+    }
+
    
 
 }
@@ -616,12 +705,12 @@ button:focus, button:active, button:hover ,.btn:active, .btn.active{
         height: 200px;
         width: 200px;
     }
+    .form-img{
+        display: none;
+    }
+
 } 
 
-/* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {
-
-} */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -642,26 +731,21 @@ button:focus, button:active, button:hover ,.btn:active, .btn.active{
         margin-left: -150px;
         font-weight: 500;
     }
-    /* .site-main .skill-area .upper-row .col-md-3>.single-skill{
-        
-        height: 60px;
-        width: 120px;
-
-    }
-    .site-main .skill-area .upper-row .col-md-3>.single-skill>img{
-        height: 150px;
-        width: 150px;
-    } */
         .best.exp{
             font-size: 20px;
         }
         .best .services .service img{
             height: 120px;
         }
+        .form-img img{
+            margin-top: 70px;
+            height: 220px;
+            width: 220px;
+        }
+    
         
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
     .head .main-menu .navbar,.head .main-menu .navbar .navbar-brand {
         padding: 4%;
