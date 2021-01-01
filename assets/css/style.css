@@ -254,10 +254,12 @@ p .para{
 
 .site-main .projects .grid .project>.title h4{
     font: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 25px;
-    line-height: 12px;
+    line-height: 21px;
+    
 }
+
 
 button:focus, button:active, button:hover ,.btn:active, .btn.active{
     outline: 0px !important;
@@ -527,6 +529,7 @@ textarea:focus, input:focus {
     margin-bottom: 8px;
 }
 
+
 /*   Responsive Code */
 
 @media only screen and (max-width:340px){
@@ -742,6 +745,7 @@ textarea:focus, input:focus {
             height: 220px;
             width: 220px;
         }
+     
     
         
 }
